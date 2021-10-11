@@ -21,3 +21,15 @@ export const lookup = bundleId => {
     .then(JSON.parse)
     .then(res => res.results)
 };
+
+/**
+ * findIcon
+ * @param {*} bundleId 
+ * @param {*} size (60|100|512)
+ * @returns 
+ */
+export const findIcon = async (bundleId, size = '100') => {
+  const [app] = await lookup(bundleId);
+  if(!app) return;
+  return app[`artworkUrl${size}`];
+};

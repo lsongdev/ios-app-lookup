@@ -11,11 +11,23 @@
 ### example
 
 ```js
-import { lookup } from '../index.js';
+import { lookup } from 'ios-app-lookup';
 
 (async () => {
   const info = await lookup('com.apple.findmy');
   console.log(info);
+})();
+```
+
+Finding app's icon image:
+
+```js
+import { lookup } from 'ios-app-lookup';
+
+(async () => {
+  const icon = await findIcon('com.apple.findmy', /* default size is 100; can be: 60|100|512 */);
+  console.log(icon);
+  // -> https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/b4/2c/bf/b42cbfee-08b7-8d92-bad0-571b4ecdea60/source/100x100bb.jpg
 })();
 ```
 
