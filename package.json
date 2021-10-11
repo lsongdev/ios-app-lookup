@@ -1,0 +1,29 @@
+{
+  "name": "ios-app-lookup",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "iOS App Infomation Lookup",
+  "main": "index.js",
+  "bin": "bin/ios-app-lookup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ios",
+    "app",
+    "icon"
+  ],
+  "author": "Lsong",
+  "license": "GPLv2",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/song940/ios-app-lookup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/song940/ios-app-lookup/issues"
+  },
+  "homepage": "https://github.com/song940/ios-app-lookup#readme"
+}
